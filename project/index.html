@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Philadelphia Urban Agriculture</title>
+
+  <!-- Leaflet CSS -->
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Project CSS -->
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <main>
+
+```
+<!-- =========================
+     Sticky map
+     ========================= -->
+
+<div class="map-container">
+
+  <div
+    class="map"
+    id="map">
+  </div>
+
+</div>
+
+
+<!-- =========================
+     Story slides
+     ========================= -->
+
+<section class="slide-section">
+
+
+  <!-- =========================
+       Slide 1: Urban agriculture
+       ========================= -->
+
+  <article
+    class="slide"
+    id="urban-agriculture-projects"
+  >
+
+    <span class="eyebrow">
+      Philadelphia Urban Agriculture
+    </span>
+
+    <h1>
+      Growing Food in the City
+    </h1>
+
+    <p>
+      Farm Philly, the urban agriculture program of Philadelhpia Parks & Recreation, was started in 2014, aiming to give community members access to organic produce, educate the youth on agricultural practices, and promote community engagement. Projects sprinkled around the city include public vegetable farms, orchards, and greenhouses.
+    </p>
+
+    <p>
+      The map shows the locations of urban agriculture projects
+      maintained by Philadelphia Parks & Recreation.
+    </p>
+
+    <p>
+      Scroll down to explore where these projects are located
+      throughout Philadelphia.
+    </p>
+
+    <p class="source">
+      <strong>Source:</strong>
+      Philadelphia Parks & Recreation, Urban Agriculture Projects.
+    </p>
+
+  </article>
+
+
+  <!-- =========================
+       Slide 2: Food access
+       ========================= -->
+
+  <article
+    class="slide"
+    id="food-retail-comparison"
+  >
+
+    <span class="eyebrow">
+      Food Access
+    </span>
+
+    <h2>
+      Urban Agriculture and Food-Retail Access
+    </h2>
+
+    <p>
+      Urban agriculture projects exist within a larger food
+      system. This map compares their locations with
+      neighborhood-level food-retail conditions.
+    </p>
+
+    <p>
+      Areas can be compared using measures such as supermarket
+      access, healthy-food access, food-retail establishments,
+      and poverty.
+    </p>
+
+    <p>
+      This comparison raises the question:
+        Are urban agriculture projects serving neighborhoods with low access to conventional retailers (who are most likely to need them)?
+    </p>
+
+    <p class="source">
+      <strong>Sources:</strong>
+      Philadelphia Parks & Recreation and Philadelphia
+      Neighborhood Food Retail data.
+    </p>
+
+  </article>
+
+<!-- =========================
+     Slide 3: Analysis
+     ========================= -->
+
+     <article
+     class="slide"
+     id="urban-agriculture-food-access"
+   >
+   
+     <span class="eyebrow">
+       Spatial Analysis
+     </span>
+   
+     <h2>
+       Urban Agriculture and Food-Retail Access
+     </h2>
+   
+     <p>
+       The map answers the question: where are urban agriculture projects located relative to
+       neighborhood-level supermarket access?
+     </p>
+   
+     <p>
+       The map overlays urban agriculture projects with areas
+       classified by supermarket access. Green areas indicate
+       supermarket access, while red areas indicate areas without
+       supermarket access.
+     </p>
+   
+     <p>
+       Low-income areas such as Kensington, which often lack supermarkets, tend to be underserved by the same community gardens that they would most benefit from.
+     </p>
+
+     <p>
+      In the future, when selecting future areas to build urban agriculture projects, we should prioritize low-income, underserved communities.
+     </p>
+   
+   </article>
+
+</section>
+
+  </main>
+
+  <!-- =========================
+       Leaflet JavaScript
+       ========================= -->
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <!-- =========================
+       Project JavaScript
+       ========================= -->
+
+  <script
+    src="js/index.js"
+    type="module">
+  </script>
+
+</body>
+
+</html>

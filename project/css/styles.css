@@ -1,0 +1,240 @@
+/* =========================
+Base page
+========================= */
+
+* {
+  box-sizing: border-box;
+  }
+
+html,
+body {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+body {
+font-family: "Open Sans", sans-serif;
+background-color: #f5f5f5;
+color: #222;
+}
+
+/* =========================
+Map
+========================= */
+
+.map-container {
+position: sticky;
+top: 0;
+height: 100vh;
+width: 100%;
+z-index: 0;
+}
+
+.map {
+height: 100%;
+width: 100%;
+}
+
+/* =========================
+Story section
+========================= */
+
+.slide-section {
+position: relative;
+margin-top: -30vh;
+z-index: 100;
+
+pointer-events: none;
+
+border-bottom: 1px solid rgb(0 0 0 / 10%);
+}
+
+/* =========================
+Story cards
+========================= */
+
+.slide {
+margin-top: 90vh;
+margin-bottom: 90vh;
+margin-left: auto;
+margin-right: 3rem;
+
+padding: 1.5rem 1.75rem;
+
+width: min(28rem, calc(100vw - 3rem));
+
+background-color: rgb(255 255 255 / 96%);
+
+color: #222;
+
+border: 1px solid rgb(0 0 0 / 15%);
+border-radius: 0.5rem;
+
+box-shadow:
+-0.5rem 0 1.5rem rgb(0 0 0 / 25%);
+
+pointer-events: initial;
+}
+
+/* First slide */
+
+.slide:first-child {
+margin-top: 0;
+}
+
+/* Last slide */
+
+.slide:last-child {
+margin-bottom: 40vh;
+}
+
+/* =========================
+Typography
+========================= */
+
+.eyebrow {
+display: block;
+
+margin-bottom: 0.5rem;
+
+font-size: 0.75rem;
+font-weight: 600;
+
+letter-spacing: 0.12em;
+text-transform: uppercase;
+
+color: #666;
+}
+
+h1,
+h2 {
+margin-top: 0;
+margin-bottom: 1rem;
+
+line-height: 1.15;
+}
+
+h1 {
+font-size: 2.2rem;
+}
+
+h2 {
+font-size: 1.7rem;
+}
+
+p {
+margin-top: 0;
+margin-bottom: 1rem;
+
+font-size: 1rem;
+line-height: 1.65;
+}
+
+p:last-child {
+margin-bottom: 0;
+}
+
+/* =========================
+Data sources
+========================= */
+
+.source {
+margin-top: 1.5rem;
+padding-top: 0.75rem;
+
+border-top: 1px solid #ddd;
+
+font-size: 0.8rem;
+line-height: 1.5;
+
+color: #666;
+}
+
+/* =========================
+Slide navigation
+========================= */
+
+.slide-controls {
+display: flex;
+
+justify-content: space-around;
+align-items: center;
+
+column-gap: 0.5rem;
+
+width: 100%;
+}
+
+.slide-nav-button {
+transition: all 0.1s;
+
+padding: 0;
+margin: 1rem;
+
+width: 4rem;
+height: 3rem;
+
+border: 1px solid #888;
+border-radius: 0.25rem;
+
+background-color: #eee;
+
+font-size: 1.5em;
+
+cursor: pointer;
+}
+
+.slide-nav-button:hover {
+background-color: #444;
+color: #fff;
+}
+
+.slide-nav-select {
+min-width: 0;
+}
+
+/* =========================
+Leaflet popups/tooltips
+========================= */
+
+.leaflet-popup-content {
+font-family: "Open Sans", sans-serif;
+line-height: 1.5;
+}
+
+.leaflet-tooltip {
+font-family: "Open Sans", sans-serif;
+}
+
+/* =========================
+Mobile layout
+========================= */
+
+@media (max-width: 700px) {
+
+.slide {
+margin-right: 1rem;
+margin-left: 1rem;
+
+
+width: calc(100vw - 2rem);
+padding: 1.25rem;
+
+
+}
+
+h1 {
+font-size: 1.8rem;
+}
+
+h2 {
+font-size: 1.45rem;
+}
+
+p {
+font-size: 0.95rem;
+}
+
+}
+
